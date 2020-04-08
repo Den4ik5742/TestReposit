@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<title>Игра всех времен и народов - Сапер!</title>
+</head>
+<link href="main.css" rel=stylesheet type=text/css>
+<body onload='StartGame()' onkeypress='KeyRestart()'>
+
+<script language="JavaScript" src="webmine.js"> </script>
+
+<p class=title>
+Игра всех времен и народов - Сапер!<br>
+</p>
+
+
+<table width=100%>
+
+<form name=menu>
+
+<tr valign="top"> 
+
+<td align=center>
+<br>
+
+<table width=250 class = menu>
+    <tr>
+        <td align=left>
+        Количество строк: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="10" name="rows"> 
+        </td>
+    </tr>
+    <tr>
+        <td align=left>
+        Количество столбцов: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="10" name="cols"> 
+        </td>
+    </tr>
+    <tr>
+        <td align=left>
+        Периодичность мин: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="5" name="period"> 
+        </td>
+    </tr>    
+    <tr>
+        <td align=left>
+        Количество мин: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="0" readonly name="mine"> 
+        </td>
+    </tr>    
+    <tr>
+        <td align=left>
+        Закрытых полей: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="0" readonly name="needOpen"> 
+        </td>
+    </tr>    
+    <tr>
+        <td align=left>
+        Начало игры: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="" readonly name="timestart"> 
+        </td>
+    </tr>    
+    <tr>
+        <td align=left>
+        Окончание игры: 
+        </td>
+        <td align=right>
+        <input type="text" size="10" value="" readonly name="timeend"> 
+        </td>
+    </tr>    
+
+        
+</table>
+
+</form>
+
+<br>
+<input type=button value="Старт" onClick='StartGame()'>
+
+</td>
+
+<td align=center>
+
+<div id='game'>
+
+
+</div>
+</td>
+</tr>
+
+</table>
+
+<p class=copyright>(c) </p>
+
+<br><br>
+ 
+ 
+ 
+
+</body>
+</html>
+
+
